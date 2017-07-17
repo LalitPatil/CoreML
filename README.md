@@ -35,10 +35,7 @@ Writing your own conversion tool involves translating the representation of your
 Convert your model using the Core ML converter that corresponds to your model’s third-party tool. Call the converter’s convert method and save the resulting model to the Core ML model format (.mlmodel).
 For example, if your model was created using Caffe, pass the Caffe model (.caffemodel) to the coremltools.converters.caffe.convert method.
 
-
-
 import coremltools
-
 coreml_model = coremltools.converters.caffe.convert('my_caffe_model.caffemodel')
 
 Now save the resulting model in the Core ML model format.
